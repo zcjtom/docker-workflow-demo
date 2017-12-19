@@ -1,5 +1,5 @@
 node {
-  git '/tmp/repo'
+  git 'https://github.com/zcjtom/docker-workflow-demo.git'
 
   def maven = docker.image('maven:3.3.9-jdk-8'); // https://registry.hub.docker.com/_/maven/
 
