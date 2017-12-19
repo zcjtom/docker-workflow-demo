@@ -13,7 +13,7 @@ node {
   // We are pushing to a private secure Docker registry in this demo.
   // 'docker-registry-login' is the username/password credentials ID as defined in Jenkins Credentials.
   // This is used to authenticate the Docker client to the registry.
-  docker.withRegistry('https://localhost/', 'docker-registry-login') {
+  docker.withRegistry('https://hub.docker.com/', 'f75e857f-99c2-4146-b8e5-4291f22871ab') {
 
     stage('Build') {
       // Spin up a Maven container to build the petclinic app from source.
